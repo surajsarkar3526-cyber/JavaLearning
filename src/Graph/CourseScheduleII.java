@@ -8,7 +8,6 @@ import java.util.Queue;
 public class CourseScheduleII {
     public static int[] findOrder(int n, int[][] prerequisites) {
 
-        @SuppressWarnings("unchecked")
         ArrayList<Integer>[] graph = new ArrayList[n];
         for (int i = 0; i < n; i++) {
             graph[i] = new ArrayList<>();
