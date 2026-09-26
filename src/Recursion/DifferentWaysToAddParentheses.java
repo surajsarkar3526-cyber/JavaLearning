@@ -23,9 +23,11 @@ public class DifferentWaysToAddParentheses {
                     for (int b : rightResult) {
                         if (operator == '+') {
                             result.add(a + b);
-                        } else if (operator == '-') {
+                        }
+                        else if (operator == '-') {
                             result.add(a - b);
-                        } else {
+                        }
+                        else {
                             result.add(a * b);
                         }
                     }
@@ -35,7 +37,6 @@ public class DifferentWaysToAddParentheses {
         if(result.isEmpty()){
             result.add(Integer.parseInt(expression));
         }
-
         return result;
     }
 }
