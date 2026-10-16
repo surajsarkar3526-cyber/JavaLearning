@@ -14,7 +14,7 @@ public class RedundantConnectionII {
             int v = edge[1];
             if (parent[v] != v) {
                 edge1 = new int[]{parent[v], v};
-                edge2 = edge;
+                edge2 = new int[]{u, v};
                 edge[1] = 0;
             }
             else {
