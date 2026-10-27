@@ -3,19 +3,20 @@ package BinaryTree;
 import java.util.Stack;
 
 public class RecoverTreeFromPreorderTraversal {
-    static class TreeNode {
+    class TreeNode {
         int val;
-        BinaryTree.VerticalOrderTraversal.TreeNode left;
-        BinaryTree.VerticalOrderTraversal.TreeNode right;
+        TreeNode left;
+        TreeNode right;
 
         TreeNode(int val) {
             this.val = val;
         }
     }
-
     public static void main(String[] args) {
         RecoverTreeFromPreorderTraversal solution = new RecoverTreeFromPreorderTraversal();
+
         TreeNode root = solution.recoverFromPreorder("1-2--3--4-5--6--7");
+
         System.out.println(root.val);
         System.out.println(root.left.val);
         System.out.println(root.right.val);
