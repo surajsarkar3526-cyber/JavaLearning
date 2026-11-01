@@ -108,7 +108,8 @@ public class catAndmouse2 {
 
             memo[mouse][cat][turn][steps] = -1;
             return false;
-        } else {
+        }
+        else {
             for (int nextCat : catMoves[cat]) {
                 if (!dfs(mouse, nextCat, 0, steps + 1, mouseJump)) {
                     memo[mouse][cat][turn][steps] = -1;
