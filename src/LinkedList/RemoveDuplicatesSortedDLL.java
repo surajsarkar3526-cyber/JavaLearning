@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class RemoveDuplicatesSortedDLL {
 
     static class Node{
-
         int val;
         Node next;
         Node prev;
